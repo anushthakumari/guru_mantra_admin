@@ -35,14 +35,14 @@ const routes = [
     route: "/dashboard",
     component: <Dashboard />,
   },
-  {
-    type: "collapse",
-    name: "Analytics",
-    key: "analytics",
-    icon: <Icon fontSize="small">leaderboard</Icon>,
-    route: "/analytics",
-    component: <Analytics />,
-  },
+  // {
+  //   type: "collapse",
+  //   name: "Analytics",
+  //   key: "analytics",
+  //   icon: <Icon fontSize="small">leaderboard</Icon>,
+  //   route: "/analytics",
+  //   component: <Analytics />,
+  // },
   {
     type: "collapse",
     name: "Courses",
@@ -51,14 +51,14 @@ const routes = [
     route: "/courses",
     component: <Courses />,
   },
-  {
-    type: "collapse",
-    name: "Add Course",
-    key: "add_course",
-    icon: <Icon fontSize="small">receipt_long</Icon>,
-    route: "/add_course",
-    component: <CreateCourse />,
-  },
+  // {
+  //   type: "collapse",
+  //   name: "Add Course",
+  //   key: "add_course",
+  //   icon: <Icon fontSize="small">receipt_long</Icon>,
+  //   route: "/add_course",
+  //   component: <CreateCourse />,
+  // },
   {
     type: "collapse",
     name: "Edit Course",
@@ -121,18 +121,18 @@ const routes = [
     route: "/community",
     component: <Community />,
   },
-  {
-    type: "collapse",
-    name: "Webinar",
-    key: "webinar",
-    icon: (
-      <Icon fontSize="small">
-        <VideoCallIcon />
-      </Icon>
-    ),
-    route: "/webinar",
-    component: <Webinar />,
-  },
+  // {
+  //   type: "collapse",
+  //   name: "Webinar",
+  //   key: "webinar",
+  //   icon: (
+  //     <Icon fontSize="small">
+  //       <VideoCallIcon />
+  //     </Icon>
+  //   ),
+  //   route: "/webinar",
+  //   component: <Webinar />,
+  // },
   {
     type: "collapse",
     name: "Free Resources",
@@ -145,55 +145,55 @@ const routes = [
     route: "/free_resources",
     component: <FreeResources />,
   },
-  {
-    type: "collapse",
-    name: "Rate Courses",
-    key: "rate_courses",
-    icon: (
-      <Icon fontSize="small">
-        <GradeIcon />
-      </Icon>
-    ),
-    route: "/rate_courses",
-    component: <RateCourses />,
-  },
-  {
-    type: "collapse",
-    name: "Rate Courses This Course",
-    key: "rate_course_details",
-    icon: (
-      <Icon fontSize="small">
-        <GradeIcon />
-      </Icon>
-    ),
-    route: "/rate_course_details/:id",
-    component: <RateCourseDetails />,
-    hideInSideNav: true,
-  },
-  {
-    type: "collapse",
-    name: "Help Desk",
-    key: "profile",
-    icon: (
-      <Icon fontSize="small">
-        <AccountBoxIcon />
-      </Icon>
-    ),
-    route: "/profile",
-    component: <TeacherProfile />,
-  },
-  {
-    type: "collapse",
-    name: "Help Desk",
-    key: "help_desk",
-    icon: (
-      <Icon fontSize="small">
-        <ContactSupportIcon />
-      </Icon>
-    ),
-    route: "/help_desk",
-    component: <HelpDesk />,
-  },
+  // {
+  //   type: "collapse",
+  //   name: "Rate Courses",
+  //   key: "rate_courses",
+  //   icon: (
+  //     <Icon fontSize="small">
+  //       <GradeIcon />
+  //     </Icon>
+  //   ),
+  //   route: "/rate_courses",
+  //   component: <RateCourses />,
+  // },
+  // {
+  //   type: "collapse",
+  //   name: "Rate Courses This Course",
+  //   key: "rate_course_details",
+  //   icon: (
+  //     <Icon fontSize="small">
+  //       <GradeIcon />
+  //     </Icon>
+  //   ),
+  //   route: "/rate_course_details/:id",
+  //   component: <RateCourseDetails />,
+  //   hideInSideNav: true,
+  // },
+  // {
+  //   type: "collapse",
+  //   name: "Help Desk",
+  //   key: "profile",
+  //   icon: (
+  //     <Icon fontSize="small">
+  //       <AccountBoxIcon />
+  //     </Icon>
+  //   ),
+  //   route: "/profile",
+  //   component: <TeacherProfile />,
+  // },
+  // {
+  //   type: "collapse",
+  //   name: "Help Desk",
+  //   key: "help_desk",
+  //   icon: (
+  //     <Icon fontSize="small">
+  //       <ContactSupportIcon />
+  //     </Icon>
+  //   ),
+  //   route: "/help_desk",
+  //   component: <HelpDesk />,
+  // },
   {
     type: "collapse",
     name: "Sign In",
@@ -201,15 +201,6 @@ const routes = [
     icon: <Icon fontSize="small">login</Icon>,
     route: "/authentication/sign-in",
     component: <SignIn />,
-    hideInSideNav: true,
-  },
-  {
-    type: "collapse",
-    name: "Sign Up",
-    key: "sign-up",
-    icon: <Icon fontSize="small">assignment</Icon>,
-    route: "/authentication/sign-up",
-    component: <SignUp />,
     hideInSideNav: true,
   },
 ];
