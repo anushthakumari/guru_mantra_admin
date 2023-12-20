@@ -1,0 +1,231 @@
+{
+    "greet": "Hii",
+    "logout": "Log Out",
+    "badges": {
+        "acharya": "Acharya",
+        "upadhyaya": "Upadhyaya",
+        "acharyapati": "Acharyapati",
+        "acharyottama": "Acharyottama"
+    },
+    "commons": {
+        "or": "or",
+        "cancel": "cancel",
+        "remove": "Remove",
+        "save": "save",
+        "loading": "loading...",
+        "close": "Close",
+        "submit": "Submit",
+        "post": "Post",
+        "caption": "caption",
+        "type": "Type",
+        "upload_file": "Upload File",
+        "credit_points": "Credit Points",
+        "badge": "Badge",
+        "summary": "Summary",
+        "view_analytics_here": "View Analytics Here",
+        "view_course": "view Course",
+        "just_updated": "just updated",
+        "courses": "Courses",
+        "resources": "Resources",
+        "student_eng": "Student Engagement"
+    },
+    "sidenav": {
+        "dashboard": "Dashboard",
+        "courses": "Courses",
+        "add_course": "Create Course",
+        "analytics": "Analytics",
+        "earn": "Earn",
+        "community": "Community",
+        "webinar": "Webinar",
+        "free_resources": "Free Resources",
+        "help_desk": "Help Desk",
+        "rate_courses": "Rate Courses",
+        "leaderboard": "Leaderboard",
+        "profile": "profile"
+    },
+    "dashboard": {
+        "best_course_heading": "Your Best Performing Course",
+        "best_course_title": "Pythagoras Theorem",
+        "best_course_desc": "Unlock the secrets of right triangles and conquer the Pythagorean Theorem!",
+        "views": "Views",
+        "student_enrolled": "Student Enrolled",
+        "your_credit_details": "Your Credit Details",
+        "analytics": "Analytics",
+        "suggestion_title": "Suggestions For You",
+        "news_title": "News",
+        "quizes": "Quizes",
+        "sugg_li_1": "Add Quizes To Create Student Engagements",
+        "use_resources": "Use Resource",
+        "sugg_li_2": "Use Free Resources to make your course interesting and engaging",
+        "total_stu_enrolled": "Total Student Enrolled",
+        "avg_engagement": "Avg Engagement",
+        "avg_rating": "Avg Rating",
+        "engagement": "Engagement",
+        "rating": "Rating",
+        "published_courses": "Published Courses",
+        "your_posted_free_resource": "Your Posted Free Resource",
+        "a_human_heart_anatomy": "A Human Heart Anatomy",
+        "driver_title": "Main Dashboard",
+        "driver_description": "Dive into your course library, see key metrics like completion rates and user engagement, and discover new learning opportunities."
+    },
+    "analytics": {
+        "days_analytics": "Days Analytics",
+        "eng_rate": "engagement rate",
+        "than_last_month": "than last month",
+        "than_yesterday": "than yesterday",
+        "driver_title": "The Analytics",
+        "driver_description": "Track key metrics like course enrollments, video views, completion rates, and student reviews. Compare your performance to similar courses and industry benchmarks"
+    },
+    "courses": {
+        "page_title": "Your Courses",
+        "edit_course": "Edit Course",
+        "view_comments": "View Comments",
+        "driver_title": "Your Courses",
+        "driver_description": "All The courses created by you will be displayed here"
+    },
+    "earn": {
+        "your_redeemed_transactions": "Your Redeemed Transactions",
+        "redeem_points": "Redeem Points",
+        "overall_credit": "Overall Credits",
+        "info_title": "Learn More",
+        "how_badges_work": "How Does Badges Work?",
+        "badge_desc": {
+            "acharya": {
+                "points": 2500,
+                "description": "Acharya is your first badge! It shows you're dedicated to teaching and making a positive impact.",
+                "requirements": "Reach 2500 credit points.",
+                "benefits": "Access special resources, mentoring, and stand out among your peers."
+            },
+            "upadhyaya": {
+                "points": 5000,
+                "description": "Upadhyaya is the next level! It means you're experienced and committed to excellence.",
+                "requirements": "Reach 5000 credit points.",
+                "benefits": "Enjoy more influence, advanced professional development, and mentorship opportunities."
+            },
+            "acharyottama": {
+                "points": 10000,
+                "description": "Acharyottama is the top badge! It recognizes your outstanding commitment to our community's growth.",
+                "requirements": "Reach 10000 credit points.",
+                "benefits": "Get the highest recognition, personalized development, and a say in important decisions."
+            }
+        },
+        "driver_title": "Earn Money!",
+        "driver_description": "Credits earned by you will be dispalyed here and you can redeem it."
+    },
+    "course_comments": {
+        "page_title": "Course Comments"
+    },
+    "webinar": {
+        "host_webinar": "Host A Webinar",
+        "join_webinar": "Join A Webinar",
+        "host_webinar_label": "Create Webinar By Clicking Below Button",
+        "join_webinar_label": "Join Webinar By Clicking Below Button",
+        "please_write_meeting_id": "Please Write Meeting ID",
+        "join": "Join",
+        "joining_webinar": "joining webinar...",
+        "join_webinar_btn": "Join Webinar",
+        "webinar_id": "Webinar ID",
+        "mute_your_mic": "Mute Your Mic",
+        "unmute_your_mic": "Unmute Your Mic",
+        "close_your_camera": "Close Your Camera",
+        "open_your_camera": "Open Your Camera",
+        "leave_webinar": "Leave Webinar",
+        "driver_title": "Host A Webinar",
+        "driver_description": "Host a webinar, or join a webinar to collaborate with other teachers."
+    },
+    "community": {
+        "page_title": "Community",
+        "post_something": "Post Something That You Like To Share To Everyone",
+        "driver_title": "Community Support!",
+        "driver_description": "Talk to the teacher community, share and gain ideas."
+    },
+    "add_course": {
+        "create_a_course": "Create A Course",
+        "start": "start",
+        "give_your_course_a_name": "Give Your Course A Name",
+        "course_elements": {
+            "add_heading": "Heading",
+            "add_video": "Video",
+            "add_audio": "Audio",
+            "add_doc": "Document",
+            "add_description": "Description",
+            "add_d_model": "3d Model",
+            "add_quiz": "Quiz",
+            "control_panel": "Control Panel",
+            "image": "image"
+        },
+        "drag_and_drop_elements_here": "Drag And Drop Elements Here",
+        "add_chapter": "Add Chapter",
+        "write_chapter_title_here": "Write Chapter Title Here",
+        "write_heading_here": "Write Heading Here",
+        "upload_file": "Upload File",
+        "choose_file_from_system": "Choose File From System",
+        "no_files_found": "No Files Found",
+        "search_file_from_free_resourse": "Search Files From Free Resource",
+        "select_file": "Select File",
+        "publish_changes": "Publish Changes",
+        "save_changes": "Save Changes",
+        "watch_preview": "Watch Preview",
+        "watch_how_to_create_course": "Watch this video to know how to create a personalised course",
+        "how_a_course_name": "How a course name should be?",
+        "clear_and_concise": "Clear & concise:",
+        "benefit_focused": "Benefit-focused:",
+        "engaging_and_sticky": "Engaging & sticky:",
+        "know_ad": "Know your audience, avoid jargon, say what it is.",
+        "what_they_get": "What they get, not just what they learn.",
+        "catch_their_eye": "Catch their eye, make it stick in their mind.",
+        "driver_title": "Create Your Own Course",
+        "driver_description": "Here you can create your own personalised course to showcase your creativity."
+    },
+    "free_resources": {
+        "page_title": "Free Resources",
+        "upload_ur_own_resource": "Upload Your Own Resource",
+        "help": {
+            "title": "Watch below video to understand what is free Resource",
+            "how_this_help": "How would this help?",
+            "li_1": "Upload your own docs, images, audio, and video to share with colleagues and earn credits!",
+            "li_2": "Get your valuable educational materials to teachers, gain recognition, and build your credit score.",
+            "li_3": "Contribute knowledge, earn recognition, and help teachers build awesome lessons!",
+            "li_4": "Discover amazing resources, enhance lessons, and earn credits for future uploads and features!"
+        },
+        "driver_title": "Free Resources!",
+        "driver_description": "Use free resources like image, audio, video and 3D models to create an interacrtive course for your students"
+    },
+    "rate_courses": {
+        "page_title": "Rate Courses Created By Others",
+        "driver_title": "Rate Other Courses",
+        "driver_description": "Rate other teacher courses and earn credit points!"
+    },
+    "rate_courses_details": {
+        "page_title": "Rate Courses Created By Others",
+        "rate_the_course": "Rate The Course"
+    },
+    "help_desk": {
+        "faqs": {
+            "que1": "What is this app for?",
+            "ans_1": "This app is designed to help teachers collaborate, create high-quality courses, and access free educational resources. It offers a drag-and-drop course builder and a credits system for rewards.",
+            "que_2": "Who can I collaborate with on a course?",
+            "ans_2": "You can collaborate with other teachers, educators, and even subject matter experts by inviting them to your shared workspace. This allows you to work together on course content, providing diverse perspectives and enriching learning materials.",
+            "que_3": "What tools are available for collaboration?",
+            "ans_3": "The app provides real-time co-editing, comments, chat, and version control. You can even track changes made by each collaborator and revert to previous versions as needed, ensuring smooth and transparent teamwork.",
+            "que_4": "How can I customize my courses?",
+            "ans_4": "The app offers a flexible drag-and-drop builder that allows you to arrange, organize, and personalize your course content. You can add different media formats, customize layouts, and create interactive elements to tailor your courses to specific learning styles and preferences.",
+            "que_5": "What types of free resources are available?",
+            "ans_5": "The app curates a vast library of free resources ranging from lesson plans and activities to templates, multimedia files, and even assessment tools. These resources are categorized by subject, grade level, and topic, making it easy to find relevant materials to supplement your courses.",
+            "que_6": "How can I discover new resources?",
+            "ans_6": "The app features a powerful search engine and intuitive browse options that allow you to quickly find relevant resources. You can also explore curated collections, view community-recommended materials, and even submit your own resource requests for specific topics.",
+            "que_7": "How do I earn credits?",
+            "ans_7": "You can earn credits by actively contributing to the app and community. This includes uploading your own resources, participating in discussions, providing feedback, and completing learning modules. The more you engage, the more credits you accumulate.",
+            "que_8": "What can I use my credits for?",
+            "ans_8": "Credits unlock exciting benefits! You can use them to access premium features like increased storage space, custom branding for your courses, early access to new tools, and even premium content bundles. Additionally, credits can boost your visibility in the community, attracting more learners and collaborators."
+        },
+        "form": {
+            "submit_message": "Your query has been submitted! We will get back to you as soon as possible with helpful information.",
+            "did_not_find": "Did not find what you were looking for?",
+            "did_not_find_1": "We are constantly working to improve our resources. Let us know what you were to hoping find, and we will do our best to help!",
+            "tell_us": "Tell us what you need"
+        },
+        "driver_title": "Get Help!!",
+        "driver_description": "If you get stuck we are here to help. Get support from us here"
+    }
+}
