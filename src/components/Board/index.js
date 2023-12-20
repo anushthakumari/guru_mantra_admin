@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, makeStyles } from "@mui/material";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -13,6 +13,10 @@ import { makeStyles } from "@mui/styles";
 import TeacherBadge from "components/TeacherBadge";
 import MDTypography from "components/MDTypography";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
+import MDButton from "components/MDButton";
+import { toast } from "react-toastify";
+import LoadingSpinner from "components/LoadingSpinner";
+import axios from "axios";
 
 const useStyles = makeStyles((theme) => ({
   tableContainer: {
@@ -33,8 +37,23 @@ const useStyles = makeStyles((theme) => ({
 const Leaderboard = ({ data }) => {
   const classes = useStyles();
 
+  const [isLoading, setisLoading] = useState(false);
+  const handleSendEmail = async () => {
+    try {
+      setisLoading(true);
+
+      await axios.get("https://guru-mantra-auth-service.onrender.com/email");
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setisLoading(false);
+      toast.success("email sent!");
+    }
+  };
+
   return (
     <TableContainer component={Paper} className={classes.tableContainer}>
+      <LoadingSpinner isLoading={isLoading} />
       <center>
         <MDTypography textAlign="center" mt={2}>
           <Icon>
@@ -60,6 +79,9 @@ const Leaderboard = ({ data }) => {
                 <MDTypography>{item.user}</MDTypography>
               </TableCell>
               <TableCell>{item.score}</TableCell>
+              <TableCell>
+                <MDButton onClick={handleSendEmail}>Send Appriciation Email</MDButton>
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>

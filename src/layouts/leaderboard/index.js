@@ -34,14 +34,6 @@ function LeaderBoard() {
   const [isLoading, setisLoading] = useState(false);
   const [data, setdata] = useState([]);
 
-  const leaderboardData = [
-    { user: "Jai Shankar", score: 100, badge: badges.acharyottama },
-    { user: "Rameshwar Singh", score: 90, badge: badges.upadhyaya },
-    { user: "Shiv Desai", score: 80, badge: badges.upadhyaya },
-    { user: "Radhey Sign", score: 60, badge: badges.upadhyaya },
-    { user: "Vishnatham Desai", score: 40, badge: badges.acharya },
-  ];
-
   useEffect(() => {
     async function getUser(params) {
       try {
