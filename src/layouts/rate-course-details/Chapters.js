@@ -16,7 +16,7 @@ const raw_chapters = [
       value: "chapter title 2",
     },
     {
-      file_url: "http://localhost:5000/uploads/images/file-1702969067490-614926362.webp",
+      file_url: "https://ingenral.com/media/blog_images/1703006561273_heart_image.webp",
       asset_id: "65813eebfb96361bffdc017c",
       asset_userame: "Jai Shankar",
       asset_is_private: false,
@@ -25,9 +25,9 @@ const raw_chapters = [
       index: 2,
     },
     {
-      file_url: "http://localhost:5000/uploads/videos/file-1702973444190-169405933.mp4",
+      file_url: "https://ingenral.com/media/blog_images/1703006420371_heart_101.mp4",
       asset_id: "658150046e92d8d3287d9ea9",
-      asset_is_private: true,
+      asset_is_private: false,
       type: "video",
       element_id: "f2655c97-a840-4280-a255-8b4225332640",
       index: 3,

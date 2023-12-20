@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 // @mui material components
 import Grid from "@mui/material/Grid";
 import Board from "../../components/Board";
@@ -22,9 +24,16 @@ import { useTranslation } from "react-i18next";
 import { Card, Typography } from "@mui/material";
 
 import badges from "constants/badges";
+import coursesAPIs from "apis/courses.apis";
+import { toast } from "react-toastify";
+import LoadingSpinner from "components/LoadingSpinner";
 
 function LeaderBoard() {
   const { t } = useTranslation();
+
+  const [isLoading, setisLoading] = useState(false);
+  const [data, setdata] = useState([]);
+
   const leaderboardData = [
     { user: "Jai Shankar", score: 100, badge: badges.acharyottama },
     { user: "Rameshwar Singh", score: 90, badge: badges.upadhyaya },
@@ -33,12 +42,36 @@ function LeaderBoard() {
     { user: "Vishnatham Desai", score: 40, badge: badges.acharya },
   ];
 
+  useEffect(() => {
+    async function getUser(params) {
+      try {
+        const d = await coursesAPIs.getLeaderBoard();
+        setdata(
+          d.map((v) => ({
+            user: v.username,
+            score: v.chaptersCount * 10,
+            badge: badges.acharya,
+          }))
+        );
+        console.log(d);
+      } catch (error) {
+        console.log(error);
+        toast.error("something went wrong!");
+      } finally {
+        setisLoading(false);
+      }
+    }
+
+    getUser();
+  }, []);
+
   return (
     <DashboardLayout>
       <DashboardNavbar absolute isMini />
+      <LoadingSpinner isLoading={isLoading} />
       <MDBox mt={8}>
         <MDBox mb={3}>
-          <Board data={leaderboardData} />
+          <Board data={data} />
         </MDBox>
       </MDBox>
       <Footer />

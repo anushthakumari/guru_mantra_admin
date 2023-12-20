@@ -77,7 +77,7 @@
         "driver_description": "Track key metrics like course enrollments, video views, completion rates, and student reviews. Compare your performance to similar courses and industry benchmarks"
     },
     "courses": {
-        "page_title": "Your Courses",
+        "page_title": "All Courses",
         "edit_course": "Edit Course",
         "view_comments": "View Comments",
         "driver_title": "Your Courses",

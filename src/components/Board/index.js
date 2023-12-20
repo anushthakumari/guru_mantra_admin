@@ -45,11 +45,11 @@ const Leaderboard = ({ data }) => {
       </center>
       <Table>
         <TableHead>
-          <TableRow>
+          {/* <TableRow>
             <TableCell className={classes.tableHeaderCell}>Rank</TableCell>
             <TableCell className={classes.tableHeaderCell}>User</TableCell>
             <TableCell className={classes.tableHeaderCell}>Score</TableCell>
-          </TableRow>
+          </TableRow> */}
         </TableHead>
         <TableBody>
           {data.map((item, index) => (

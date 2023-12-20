@@ -18,6 +18,8 @@ import reportsBarChartData from "layouts/analytics/data/reportsBarChartData";
 import { useTranslation } from "react-i18next";
 import LoadingSpinner from "components/LoadingSpinner";
 import localStorage from "libs/localStorage";
+import coursesAPIs from "apis/courses.apis";
+import { toast } from "react-toastify";
 
 const defaultStats = localStorage.getStats();
 
@@ -25,15 +27,24 @@ function Dashboard() {
   const [isLoading, setisLoading] = useState(false);
   const [data, setdata] = useState({});
 
+  const userData = localStorage.getUser();
+
   const { t } = useTranslation();
 
   useEffect(() => {
     setisLoading(true);
-    setTimeout(() => {
-      setdata(defaultStats);
-      setisLoading(false);
-    }, 500);
-  }, []);
+    coursesAPIs
+      .getCourseAnalyticsByUserId(userData.user_id)
+      .then((d) => {
+        setdata(d ? d : defaultStats);
+      })
+      .catch((e) => {
+        toast.error("something went wrong!");
+      })
+      .finally((v) => {
+        setisLoading(false);
+      });
+  }, [userData]);
 
   return (
     <DashboardLayout>
@@ -70,10 +81,25 @@ function Dashboard() {
           <Grid item xs={12} md={6} lg={3}>
             <MDBox mb={1.5}>
               <ComplexStatisticsCard
+                color="success"
+                icon="store"
+                title={t("commons.credit_points")}
+                count={data.credit_points}
+                percentage={{
+                  color: "success",
+                  amount: "+1%",
+                  label: t("analytics.than_yesterday"),
+                }}
+              />
+            </MDBox>
+          </Grid>
+          <Grid item xs={12} md={6} lg={3}>
+            <MDBox mb={1.5}>
+              <ComplexStatisticsCard
                 color="primary"
                 icon="person_add"
                 title={t("commons.resources")}
-                count={data.resourse_count}
+                count={"" + data.resource_count}
                 percentage={{
                   color: "success",
                   amount: "",
@@ -85,17 +111,19 @@ function Dashboard() {
         </Grid>
         <MDBox mt={4.5}>
           <Grid container spacing={3}>
-            <Grid item xs={12} md={6} lg={4}>
-              <MDBox mb={3}>
-                <ReportsBarChart
-                  color="info"
-                  title="A Human Heart"
-                  description={t("commons.student_eng")}
-                  date={7 + " " + t("analytics.days_analytics")}
-                  chart={reportsBarChartData}
-                />
-              </MDBox>
-            </Grid>
+            {data?.courses_stats?.map((v, i) => (
+              <Grid key={i} item xs={12} md={6} lg={4}>
+                <MDBox mb={3}>
+                  <ReportsBarChart
+                    color="info"
+                    title={v.title}
+                    description={t("commons.student_eng")}
+                    date={7 + " " + t("analytics.days_analytics")}
+                    chart={v.chart}
+                  />
+                </MDBox>
+              </Grid>
+            ))}
             {/* <Grid item xs={12} md={6} lg={4}>
               <MDBox mb={3}>
                 <ReportsLineChart
