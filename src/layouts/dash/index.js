@@ -34,7 +34,7 @@ function Dashboard() {
   useEffect(() => {
     setisLoading(true);
     coursesAPIs
-      .getCourseAnalyticsByUserId(userData.user_id)
+      .getCourseAnalyticsByUserId(userData?.user_id)
       .then((d) => {
         setdata(d ? d : defaultStats);
       })
